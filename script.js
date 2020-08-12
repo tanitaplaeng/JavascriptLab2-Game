@@ -3,7 +3,7 @@ const randomDamage = () => Math.floor(Math.random() * 11)
 // console.log(randomDamage())
 
 const chooseOption = (opt1, opt2) => {
-    let randNum = Math.floor(Math.random() * 2);
+    const randNum = Math.floor(Math.random() * 2);
     return randNum === 0 ? opt1 : opt2
 }
 
@@ -49,7 +49,7 @@ function fight(player1, player2, player1Health, player2Health) {
         break;
         }
     } 
-}
+    }
 }
 
 fight('Henry', 'Louise', 100, 100)
